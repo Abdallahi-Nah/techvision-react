@@ -1,0 +1,20 @@
+.footer { background: var(--bg); border-top: 1px solid var(--border); padding: 60px 5% 30px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+@media(max-width:900px){ .footer-grid{grid-template-columns:1fr 1fr;} }
+@media(max-width:480px){ .footer-grid{grid-template-columns:1fr;} }
+
+.footer-logo { font-size: 1.4rem; }
+.footer-brand p { color: var(--text2); font-size: 0.85rem; margin: 1rem 0; line-height: 1.8; }
+.footer-socials { display: flex; gap: 10px; margin-top: 1.5rem; }
+.social-dot { width: 34px; height: 34px; border-radius: 50%; background: rgba(0,212,255,0.08); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 0.75rem; cursor: pointer; transition: var(--tr); }
+.social-dot:hover { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+
+.footer-col h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 1.2rem; color: var(--text); }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 0.6rem; }
+.footer-col ul li button { background: none; border: none; color: var(--text2); cursor: pointer; font-size: 0.84rem; font-family: inherit; transition: color 0.3s; padding: 0; }
+.footer-col ul li button:hover { color: var(--accent); }
+
+.footer-bottom { border-top: 1px solid var(--border); padding-top: 1.8rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; color: var(--text2); font-size: 0.82rem; }
+.footer-status { display: flex; align-items: center; gap: 8px; }
+.status-dot { color: var(--accent); font-size: 0.6rem; animation: pulse 2s infinite; }

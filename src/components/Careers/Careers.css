@@ -1,0 +1,10 @@
+.careers-section { background: var(--bg); }
+.careers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 1.5rem; }
+.job-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem; transition: var(--tr); display: flex; flex-direction: column; gap: 0.9rem; }
+.job-card:hover { border-color: rgba(0,212,255,0.3); transform: translateY(-4px); }
+.job-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; }
+.job-title { font-size: 1.05rem; font-weight: 700; }
+.job-badge { font-size: 0.72rem; padding: 4px 12px; border-radius: 20px; background: rgba(0,212,255,0.1); color: var(--accent); border: 1px solid rgba(0,212,255,0.2); white-space: nowrap; flex-shrink: 0; }
+.job-dept { color: var(--text2); font-size: 0.85rem; }
+.job-meta { display: flex; gap: 1rem; flex-wrap: wrap; }
+.job-meta span { color: var(--text2); font-size: 0.8rem; }
